@@ -2,4 +2,69 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Outfit";
+}
+
+.stack {
+  display: grid;
+}
+
+.hvc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+$card-bg-color: hsl(0, 0%, 100%);
+$app-bg-color: hsl(212, 45%, 89%);
+
+$header-font-color: hsl(218, 44%, 22%);
+$header-font-weight: 700;
+
+$paragraph-font-color: hsl(220, 15%, 55%);
+$paragraph-font-weight: 400;
+$paragraph-font-size: 15px;
+
+.app {
+  min-height: 100dvh;
+  min-width: fit-content;
+  padding: 32px 16px;
+  background-color: $app-bg-color;
+}
+
+.card {
+  display: grid;
+  width: 280px;
+  flex-shrink: 0;
+  background-color: $card-bg-color;
+  border-radius: 16px;
+  padding: 16px 16px 32px;
+  box-shadow: 0px 12px 20px 0px hsla(0, 0%, 0%, 8%);
+}
+
+.card__content {
+  row-gap: 20px;
+
+  img {
+    width: 100%;
+    border-radius: 8px;
+  }
+}
+
+.card__text-content {
+  display: grid;
+  row-gap: 16px;
+  text-align: center;
+  padding: 0px 8px;
+
+  h3 {
+    color: $header-font-color;
+    font-weight: $header-font-weight;
+  }
+
+  p {
+    font-size: $paragraph-font-size;
+    font-weight: $paragraph-font-weight;
+    color: $paragraph-font-color;
+  }
 }
