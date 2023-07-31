@@ -5,7 +5,7 @@ function App() {
     <div className="app hvc">
       <div className="card">
         <div className="card__content stack">
-          <img src="/images/image-qr-code.png" title="qr-code" />
+          <img src="images/image-qr-code.png" title="qr-code" />
 
           <div className="card__text-content">
             <h3>Improve your front-end skills by buidling projects</h3>
