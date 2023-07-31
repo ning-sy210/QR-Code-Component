@@ -46,3 +46,21 @@ $paragraph-font-size: 15px;
     border-radius: 8px;
   }
 }
+
+.card__text-content {
+  display: grid;
+  row-gap: 16px;
+  text-align: center;
+  padding: 0px 8px;
+
+  h3 {
+    color: $header-font-color;
+    font-weight: $header-font-weight;
+  }
+
+  p {
+    font-size: $paragraph-font-size;
+    font-weight: $paragraph-font-weight;
+    color: $paragraph-font-color;
+  }
+}
