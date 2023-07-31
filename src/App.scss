@@ -26,7 +26,8 @@ $paragraph-font-weight: 400;
 $paragraph-font-size: 15px;
 
 .app {
-  height: 100dvh;
+  min-height: 100dvh;
+  padding: 32px 0px;
   background-color: $app-bg-color;
 }
 
