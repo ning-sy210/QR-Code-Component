@@ -5,66 +5,44 @@
   font-family: "Outfit";
 }
 
-.stack {
-  display: grid;
-}
-
 .hvc {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-$card-bg-color: hsl(0, 0%, 100%);
-$app-bg-color: hsl(212, 45%, 89%);
-
-$header-font-color: hsl(218, 44%, 22%);
-$header-font-weight: 700;
-
-$paragraph-font-color: hsl(220, 15%, 55%);
-$paragraph-font-weight: 400;
-$paragraph-font-size: 15px;
-
 .app {
   min-height: 100dvh;
-  min-width: fit-content;
-  padding: 32px 16px;
-  background-color: $app-bg-color;
+  padding: 32px 0px;
+  background-color: hsl(212, 45%, 89%);
 }
 
 .card {
-  display: grid;
   width: 280px;
-  flex-shrink: 0;
-  background-color: $card-bg-color;
-  border-radius: 16px;
   padding: 16px 16px 32px;
-  box-shadow: 0px 12px 20px 0px hsla(0, 0%, 0%, 8%);
-}
+  border-radius: 16px;
+  background-color: hsl(0, 0%, 100%);
 
-.card__content {
-  row-gap: 20px;
+  text-align: center;
+  box-shadow: 0px 12px 20px 0px hsla(0, 0%, 0%, 8%);
 
   img {
     width: 100%;
     border-radius: 8px;
+    margin-bottom: 16px;
   }
-}
 
-.card__text-content {
-  display: grid;
-  row-gap: 16px;
-  text-align: center;
-  padding: 0px 8px;
-
-  h3 {
-    color: $header-font-color;
-    font-weight: $header-font-weight;
+  .title-text {
+    color: hsl(218, 44%, 22%);
+    font-size: 1.17rem;
+    font-weight: 700;
+    margin-bottom: 16px;
   }
 
   p {
-    font-size: $paragraph-font-size;
-    font-weight: $paragraph-font-weight;
-    color: $paragraph-font-color;
+    padding: 0px 8px;
+    color: hsl(220, 15%, 55%);
+    font-size: 15px;
+    font-weight: 400;
   }
 }
